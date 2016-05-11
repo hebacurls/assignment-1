@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html> 
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/stylesheets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="javascripts/chart-application.js"></script>
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body { padding-top:80px; }
+    </style>
+</head>
+<body>
+<div class="container">
 
+    <div class="jumbotron text-center">
+        <h1><span class="fa fa-lock"></span> Node Authentication</h1>
 
+        <p>Login or Register with:</p>
 
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to  <%= title %></p>
-              <div ng-app="myApp.controllers">
-              <div ng-controller="MyCtrl1">
-                <div id="chartdiv">
-                </div>
-                </div>
-                </div>
-    
-  </body>
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+        <a href="/login/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+        <a href="/login/linkedin" class="btn btn-primary"><span class="fa fa-linkedin"></span> LinkedIn</a>
+    </div>
+</div>
+</body>
 </html>
+

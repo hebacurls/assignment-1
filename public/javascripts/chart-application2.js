@@ -20,7 +20,7 @@ angular.module('myApp.controllers', []).
           ['Live at the Gold Dollar', 2012, 11],
           ['Nine Miles from the White City', 2013, 12]
         
-          []
+        
         ]);
 	var options = {
           title: 'Company Performance'
@@ -31,4 +31,3 @@ angular.module('myApp.controllers', []).
   .controller('MyCtrl2', [function() {
 
   }]);
-
