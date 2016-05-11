@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var SampleSchema = new mongoose.Schema({
+var GraphDataSchema = new mongoose.Schema({
   album: String,
   year: Number,
   US_peak_chart_post: Number
@@ -8,7 +8,7 @@ var SampleSchema = new mongoose.Schema({
 {
     collection: 'white_stripes_collection'
 });
-mongoose.model('Sample', SampleSchema);
+mongoose.model('GraphData', GraphDataSchema);
 
 /*
     "album": "White Blood Cells",

@@ -43,5 +43,5 @@ module.exports = function (passport) {
         return bCrypt.compareSync(password, cipherPass);
     }
 };    
-Status API Training Shop Blog About
+//Status API Training Shop Blog About
 
